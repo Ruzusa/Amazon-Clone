@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Amazon clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Amazon-clone.css" />
+  </head>
+  <body>
+    <header>
+      <!-- firstnav -->
+      <section class="firstnav"> 
+        <div class="navbarone">
+          <!-- favicon -->
+          <div class="nav-favicon border"></div>
+
+          <!-- location area -->
+          <div class="nav-location border">
+            <div class="location-address-one">
+              <span>Deliver To</span>
+            </div>
+            <div class="location-address-two">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Pakistan</span>
+            </div>
+          </div>
+
+          <!-- search options -->
+          <div class="nav-search">
+            <select name="category" class="selectcategory">
+              <option value="">  All</option>
+              <option value="">Arts and crafts</option>
+              <option value="">Automative</option>
+              <option value="">Baby</option>
+              <option value="">Toys</option>
+              <option value="">Aapparel</option>
+              <option value="">Fashion</option>
+              <option value="">Electronics</option>
+              <option value="">Home and kitchen</option>
+              <option value="">Deals</option>
+            </select>
+            <!-- serachbar -->
+            <input type="text" placeholder="Search Amazon" class="searchbar" />
+            <div class="magnifyingglass flex-center">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+
+          <!-- language selection -->
+          <div class="nav-language border flex-center">
+            <div class="lang-img">
+              <img
+                src="/images/american-flag.png"
+                width="20px"
+                height="15px"
+                alt="american-flag"
+              />
+            </div>
+            <div>
+              <select name="language" class="selectlanguage">
+                <option value="English">EN</option>
+                <option value="Arabic">Arabic- AR</option>
+                <option value="Dutch">Dutch- DC</option>
+                <option value="German">German- GR</option>
+                <option value="French">French- FN</option>
+                <option value="Urdu">Urdu- UR</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- sign in -->
+          <div class="nav-signin border flex-center ">
+            <a href="#" class="white">
+              <div class="text1">Hello, sign in</div>
+              <div class="text2">
+                <select name="Select Accounts" id="text2selection">
+                  <option value="Accounts and Lists" selected disabled>
+                    Accounts and Lists
+                  </option>
+                  <option value="Accounts">Accounts</option>
+                  <option value="Orders">Orders</option>
+                  <option value="Recommendations">Recommendations</option>
+                  <option value="Browsing History">Browsing History</option>
+                  <option value="Watchlist">Watchlist</option>
+                </select>
+              </div>
+            </a>
+          </div>
+
+          <!-- returns and orders -->
+          <div class="RETURNS flex-center border">
+            <a href="#" class="white flex-column">
+              <span class="returns">Returns</span>
+              <span class="orders"> <strong>& Orders</strong></span>
+            </a>
+          </div>
+
+          <!-- cart -->
+          <div class="cart flex-center border">
+            <i class="fa-solid fa-cart-shopping" id="carticon"></i>
+            <p class="carttext"><span>Cart</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- second nav -->
+      <section class="secondnav">
+        <div class="navbartwo">
+          <a href="#" class="items border white"> <i class="fa-solid fa-bars" id="menuicon"></i>All</a>
+          <a href="#" class="items border white">Today's Deals</a>
+          <a href="#" class="items border white">Prime Video</a>
+          <a href="#" class="items border white">Registry</a>
+          <a href="#" class="items border white">Gift Cards</a>
+          <a href="#" class="items border white">Customer Service</a>
+          <a href="#" class="items border white">Sell</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="herosection"></section>
+      <section class="allcards">
+        <!-- card 1 -->
+        <article class="card">
+        <div class="cardheading">
+            <h2>Get your game on</h2>
+          </div>
+          <a href="#">
+            <div class="cardimg">
+              <img
+                src="/images/get-your-game-on.jpg"
+                alt="get-your-game-on"
+                width="300px"
+                height="99%"
+              />
+            </div>
+            <div class="cardtext">
+              <p><span>Shop gaming</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- card 2 -->
+        <article class="card">
+          <div class="cardheading">
+            <h2>Shop for your home essentials</h2>
+          </div>
+          <a href="#">
+            <div class="cardimg cardimg2">
+              <!-- first row of img -->
+              <div class="firstrowimg">
+                <img
+                  src="/images/cleaning-tools.jpg"
+                  alt="cleaning-tools"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Cleaning Tools</span></p>
+                <img
+                  src="/images/home-decor.jpg"
+                  alt="home-decor"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Home decor</span></p>
+              </div>
+              <!-- second row of img -->
+              <div class="secondrowimg">
+                <img
+                  src="/images/home-storage.jpg"
+                  alt="home-storage"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Home storage</span></p>
+                <img
+                  src="/images/bedding.jpg"
+                  alt="bedding"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Bedding</span></p>
+              </div>
+            </div>
+            <div class="cardtext">
+              <p><span>Discover more in home</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- card 3 -->
+        <article class="card">
+          <div class="cardheading">
+            <h2>Fashion trends you like</h2>
+          </div>
+          <a href="#">
+            <div class="cardimg cardimg2">
+              <!-- first row of img -->
+              <div class="firstrowimg">
+                <img
+                  src="/images/dresses.jpg"
+                  alt="dresses"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Dresses</span></p>
+                <img
+                  src="/images/jackets.jpg"
+                  alt="jackets"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Jackets</span></p>
+              </div>
+              <!-- second row of img -->
+              <div class="secondrowimg">
+                <img
+                  src="/images/knits.jpg"
+                  alt="knits"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Knits</span></p>
+                <img
+                  src="/images/jewelry.jpg"
+                  alt="jewelry"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Jewelry</span></p>
+              </div>
+            </div>
+            <div class="cardtext">
+              <p><span>Explore more</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- card 4 -->
+        <article class="card">
+          <div class="cardheading">
+            <h2>Save big on school essentials</h2>
+          </div>
+          <a href="#">
+            <div class="cardimg cardimg2">
+              <!-- first row of img -->
+              <div class="firstrowimg">
+                <img
+                  src="/images/backpacks.jpg"
+                  alt="backpacks"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Backpacks</span></p>
+                <img
+                  src="/images/stationery.jpg"
+                  alt="stationery"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Stationery</span></p>
+              </div>
+              <!-- second row of img -->
+              <div class="secondrowimg">
+                <img
+                  src="/images/electronics.jpg"
+                  alt="electronics"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p1"><span>Electronics</span></p>
+                <img
+                  src="/images/fashion.jpg"
+                  alt="fashion"
+                  width="134px"
+                  height="102px"
+                />
+                <p class="p2"><span>Fashion</span></p>
+              </div>
+            </div>
+            <div class="cardtext">
+              <p><span>See more</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- card 5 -->
+        <article class="card">
+          <div class="cardheading">
+            <h2>Top categories in kitchen appliances</h2>
+          </div>
+          <a href="#" >
+            <div class="cardimg cardimg2">
+              <!-- first row -->
+              <div class="firstrowimg">
+                <img src="/images/cooker.jpg" alt="cooker" width="100%">
+                <p class="p1"><span>Cooker</span></p>
+              </div>
+              <!-- second row -->
+               <div class="secondrow">
+                <div class="firstimg flex-column">
+                <img src="/images/coffee.jpg" alt="coffee" width="100%" height="80px"> 
+                <p class="p1"><span>Coffee</span></p>
+                </div>
+                <div class="secondimg flex-column">
+                <img src="/images/potsandpans.jpg" alt="pots and pans" width="100%" height="80px"> 
+                <p class="p1"><span>Pots and pans</span></p>
+                </div>
+                <div class="thirdimg flex-column">
+                <img src="/images/kettles.jpg" alt="kettles" width="100%" height="80px"> 
+                <p class="p1"><span>Kettles</span></p>
+                </div>
+               </div>
+            <div class="cardtext">
+              <p class="p3"><span>Explore all products in kitchen</span></p>
+            </div>
+          </a>
+        </article>
+        <!-- More cards can be added here -->
+    </div>
+  </section>
+    </main>
+
+    <footer>
+      <!-- div back to top -->
+       <a href="#navbarone" id="backtop">
+      <section class="backtotop flex-center">
+        <span>Back to top</span>
+      </section></a>
+
+      <!-- div vertical columns -->
+       <section class="footerverticalcolumns">
+        <div class="columns">
+        <div id="column1">
+          <h6>Get To Know Us</h6>
+          <div class="anchor flex-column">
+          <a href="#">Carrers</a>
+          <a href="#">Blog</a>
+          <a href="#">About Amazon</a>
+          <a href="#">Inverstor relations</a>
+          <a href="#">Aamzon devices</a>
+          <a href="#">Amazon Sciences</a>
+          </div>
+        </div>
+
+         <div id="column2">
+          <h6>Make Money With Us</h6>
+          <div class="anchor flex-column">
+          <a href="#">Sell products on amazon</a>
+          <a href="#">Sell on amazon business</a>
+          <a href="#">Sell apps on amazon</a>
+          <a href="#">Become an affiliate</a>
+          <a href="#">Advertise your products</a>
+          <a href="#">Self-Publish with us</a>
+          <a href="#">Host an Amazon Hub</a>
+          <a href="#">See more</a>
+          </div>
+        </div>
+
+        <div id="column3">
+          <h6>Amazon Payment Products</h6>
+          <div class="anchor flex-column">
+          <a href="#">Amazon business card </a>
+          <a href="#">Ship with points</a>
+          <a href="#">Reload your balance</a>
+          <a href="#">Amazon currency converter</a>
+          </div>
+        </div>
+
+        <div id="column4">
+          <h6>Let us help you</h6>
+          <div class="anchor flex-column">
+          <a href="#">Amazon and covid-19 </a>
+          <a href="#">Your account</a>
+          <a href="#">Your orders</a>
+          <a href="#">Shipping rates and policies</a>
+          <a href="#">Returns and replacements</a>
+          <a href="#">Mange your content and devices</a>
+          <a href="#">Help</a>
+          </div>
+        </div> 
+        </div>
+      </section>
+
+       <div class="space"><!--div for line--></div>
+
+       <!-- logo div -->
+        <section class="langdiv flex-center">
+          <div class="logo">
+          <a href="#">
+            <img src="/images/amazon_favicon.png" alt="amazon logo" width="110px" height="60">
+          </a>
+          </div>
+
+          <div class="otheroptions">
+          <div class="language">
+            <select name="Language" id="language">
+              <option value="English">English</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Dutch">Dutch</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+          </div>
+
+          <div class="currency">
+            <select name="Currency" id="currency">
+              <option value="dollar" selected>Dollar</option>
+              <option value="pakistani ruppee">PKR</option>
+              <option value="indian rupee">IR</option>
+            </select>
+          </div>
+
+          <div class="country">
+            <select name="Country" id="country">
+              <option value="america">Amercia</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="india">India</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+     <!-- final div -->
+         <section class="amzlinks">
+          <div class=" flex-column">
+          
+            <div class="one flex-column">
+             <a href="#" class="white">
+             <span class="spanone">
+               Amazon Music
+             </span>
+             <span class="spantwo">
+               Streams millions </span>
+               <span class="spantwo">
+               of songs
+             </span>
+             </a>
+            </div>
+  
+            <div class="two  flex-column">
+             <a href="#" class="white">
+             <span class="spanone">
+               Aamzon business
+             </span>
+             <span class="spantwo">
+               Everything for </span>
+               <span class="spantwo">
+               your business
+             </span>
+             </a>
+            </div>
+         
+            <div class="three  flex-column">
+             <a href="" class="white">
+             <span class="spanone">
+               IMDbPro
+             </span>
+             <span class="spantwo">
+               Get Info</span>
+               <span class="spantwo">
+               Entertainment</span>
+               <span class="spantwo">
+               Professionals Need
+             </span>
+             </a>
+            </div>
+          </div>
+
+          <div id="secondcol">
+           <div class="one  flex-column">
+            <a href="" class="white">
+            <span class="spanone">
+              Amazon Ads
+            </span>
+            <span class="spantwo">
+              Reach customers</span>
+              <span class="spantwo">
+              wherever they</span>
+              <span class="spantwo">
+              spend their time
+            </span>
+            </a>
+           </div>
+
+           <div class="two  flex-column">
+            <a href="" class="white">
+            <span class="spanone">
+              Amazon Global
+            </span>
+            <span class="spantwo">
+              Ship orders</span>
+              <span class="spantwo">
+              internationally
+            </span>
+            </a>
+           </div>
+
+           <div class="three  flex-column">
+            <a href="" class="white">
+            <span class="spanone">
+              Kindle Direct Publishing
+            </span>
+            <span class="spantwo">
+              INdie digital &</span>
+              <span class="spantwo">
+              print Publishing</span>
+              <span class="spantwo">
+              made easy
+            </span>
+            </a>
+           </div>
+  
+           <div class="four">
+            <a href="" class="white">
+            <span class="spanone">
+              eero Wifi
+            </span>
+            <span class="spantwo">
+              Stream 4k video </span>
+              <span class="spantwo">
+              in every room
+            </span>
+            </a>
+           </div>
+          </div>
+  
+        <div id="thirdcol">
+         <div class="one  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            6pm
+          </span>
+          <span class="spantwo">
+            Score deals </span>
+            <span class="spantwo">
+            on fashion  brands
+          </span>
+          </a>
+         </div>
+
+         <div class="two  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            Amazon web services
+          </span>
+          <span class="spantwo">
+            Scalable cloud </span>
+            <span class="spantwo">
+            computing</span>
+            <span class="spantwo">
+            services
+          </span>
+          </a>
+         </div>
+
+         <div class="three  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            Prime video direct
+          </span>
+          <span class="spantwo">
+            Video distribution</span>
+            <span class="spantwo">
+            made easy
+          </span>
+          </a>
+         </div>
+
+         <div class="four">
+          <a href="" class="white">
+          <span class="spanone">
+            Blink
+          </span>
+          <span class="spantwo">
+            Smart security</span>
+            <span class="spantwo">
+            for every home
+          </span>
+          </a>
+         </div>
+        </div>
+         
+        <div id="lastcol">    
+         <div class="one  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            Veeqo
+          </span>
+          <span class="spantwo">
+           Shipping software</span>
+           <span class="spantwo">
+           inventory management
+          </span>
+          </a>
+         </div>
+
+         <div class="two  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            IMDb
+          </span>
+          <span class="spantwo">
+            Movies, TV</span>
+            <span class="spantwo">
+            & Celebrities
+          </span>
+          </a>
+         </div>
+
+         <div class="three  flex-column">
+          <a href="" class="white">
+          <span class="spanone">
+            Ring
+          </span>
+          <span class="spantwo" >
+           Smart Home</span>
+           <span class="spantwo">
+           Security Systems
+          </span>
+          </a>
+         </div>
+        </div>
+      </section>
+        <section class="finalfooter">
+          <div >
+            <a href="" class="white">Conditions of Use</a>
+            <a href="" class="white">Privacy Notes</a>
+            <a href="" class="white">Consumer Health Data Privacy Disclosures</a>
+            <a href="" class="white">Your Ads</a>
+            <a href="" class="white">Privacy Checkup</a>
+          </div>
+          <div>
+          <span>
+            &copy;1996-2025, Amazon.com, Inc. or its affiliates
+          </span>
+          </div>
+        </section>
+    </footer>
+
+  </body>
+</html>
